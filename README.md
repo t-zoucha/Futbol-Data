@@ -15,3 +15,5 @@ Link to the website: https://t-zoucha.github.io/Futbol-Data/
 
 ## Acknowledgments
 A special thanks to **Dato-Futbol** for their incredible work on the **soccerAnimate** project. Their contributions have significantly enhanced the visual aspects of this application, allowing for a more engaging user experience.
+
+Link to **soccerAnimate** repo: https://github.com/Dato-Futbol/soccerAnimate
