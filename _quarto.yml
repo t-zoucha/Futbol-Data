@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "Home"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Football Analysis
+      - href: convex-vorono.qmd
+        text: Spatial Awareness
+      - href: about.qmd
+        text: About our Goals
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
