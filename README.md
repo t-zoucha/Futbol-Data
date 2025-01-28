@@ -1,10 +1,10 @@
 # Futbol Data
 
 
-### Overview
+## Overview
 Futbol Data is a comprehensive web application designed to provide users with insightful visualizations and statistics related to football (soccer) matches. By leveraging data from various sources, the application offers an engaging and informative experience for football enthusiasts, analysts, and fans alike.
 
-## Features
+### Features
 
 - *Interactive Visualizations*: Explore match data through dynamic charts and graphs that illustrate key statistics.
 
