@@ -12,5 +12,5 @@ Futbol Data is a comprehensive web application designed to provide users with in
 
 - *User -Friendly Interface*: Navigate easily through a clean and intuitive interface designed for optimal user experience.
 
-### Acknowledgments
+## Acknowledgments
 A special thanks to **Dato-Futbol** for their incredible work on the **soccerAnimate** project. Their contributions have significantly enhanced the visual aspects of this application, allowing for a more engaging user experience.
