@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Spacial Awareness – Home</title>
+<title>Spacial Awareness – Football Analytics Hub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,10 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,12 +68,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+body {
+  text-rendering: optimizeLegibility;
+}
+</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -79,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Home</span>
+    <span class="navbar-title">Football Analytics Hub</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,41 +96,53 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./index.html"> <i class="bi bi-bar-chart" role="img">
+</i> 
 <span class="menu-text">Football Analysis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./convex-vorono.html" aria-current="page"> 
+    <a class="nav-link" href="./chance-creation.html"> <i class="bi bi-bar-chart" role="img">
+</i> 
+<span class="menu-text">Creating Chances</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./convex-vorono.html" aria-current="page"> <i class="bi bi-map" role="img">
+</i> 
 <span class="menu-text">Spatial Awareness</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About our Goals</span></a>
+    <a class="nav-link" href="./about.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-spatial-analysis-matters" id="toc-why-spatial-analysis-matters" class="nav-link active" data-scroll-target="#why-spatial-analysis-matters">Why Spatial Analysis Matters</a></li>
-  <li><a href="#convexhull" id="toc-convexhull" class="nav-link" data-scroll-target="#convexhull">Convexhull</a></li>
-  <li><a href="#voronoi" id="toc-voronoi" class="nav-link" data-scroll-target="#voronoi">Voronoi</a></li>
+  <li><a href="#breaking-down-defensive-formations-with-convex-hull" id="toc-breaking-down-defensive-formations-with-convex-hull" class="nav-link active" data-scroll-target="#breaking-down-defensive-formations-with-convex-hull">Breaking Down Defensive Formations with Convex Hull</a></li>
+  <li><a href="#creating-opportunities-with-voronoi-diagrams" id="toc-creating-opportunities-with-voronoi-diagrams" class="nav-link" data-scroll-target="#creating-opportunities-with-voronoi-diagrams">Creating Opportunities with Voronoi Diagrams</a></li>
+  <li><a href="#why-spatial-analysis-matters" id="toc-why-spatial-analysis-matters" class="nav-link" data-scroll-target="#why-spatial-analysis-matters">Why Spatial Analysis Matters</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -132,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -144,38 +163,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="convexhull.gif.gif" class="img-fluid"></p>
+<section id="breaking-down-defensive-formations-with-convex-hull" class="level1">
+<h1>Breaking Down Defensive Formations with Convex Hull</h1>
+<p>The Convex Hull analysis provides a revolutionary way to understand how teams and players occupy and control space on the field. Imagine drawing a rubber band around a group of players – the shape it forms is the convex hull. This mathematical concept helps us:</p>
+<ul>
+<li>Measure the effective defensive coverage area</li>
+<li>Identify gaps in defensive formations</li>
+<li>Analyze team compactness and expansion</li>
+<li>Track how defensive shapes change throughout the game</li>
+</ul>
+<p>By analyzing these patterns, teams can better understand their defensive positioning and identify opportunities to exploit opposing team formations.</p>
+<p><img src="voronoi.gif.gif" class="img-fluid"></p>
+</section>
+<section id="creating-opportunities-with-voronoi-diagrams" class="level1">
+<h1>Creating Opportunities with Voronoi Diagrams</h1>
+<p>Voronoi diagrams take spatial analysis to the next level by dividing the playing field into regions of influence. Each region represents the area where a player has the most control compared to all other players. This analysis helps in:</p>
+<ul>
+<li>Understanding player dominance in specific areas</li>
+<li>Identifying optimal passing lanes</li>
+<li>Recognizing space creation opportunities</li>
+<li>Analyzing territorial control during different phases of play</li>
+</ul>
+<p>Through Voronoi analysis, we can quantify which team is controlling more valuable space and identify tactical adjustments to create better scoring opportunities.</p>
+</section>
 <section id="why-spatial-analysis-matters" class="level1">
 <h1>Why Spatial Analysis Matters</h1>
-<p>Modern sports are increasingly about space creation and control. Understanding these spatial concepts gives teams and analysts powerful tools to:</p>
+<p>Futbol is all about space creation and control. Understanding these spatial concepts gives teams and analysts powerful tools to:</p>
 <ol type="1">
 <li>Develop more effective tactical strategies</li>
 <li>Identify weaknesses in opposing team formations</li>
 <li>Train players to better recognize spatial opportunities</li>
 <li>Make data-driven decisions during matches</li>
 </ol>
-</section>
-<section id="convexhull" class="level1">
-<h1>Convexhull</h1>
-<p>Imagine stretching a rubber band around your team’s defenders - that’s essentially what a Convex Hull shows us!</p>
-<ul>
-<li>The colored shape that wraps around the outermost players</li>
-<li>How this shape expands and contracts as players move</li>
-<li>The total area the defense is effectively covering</li>
-</ul>
-<p>What This Tells Us: - How compact or spread out your defense is - The spaces attackers might exploit - How well your team maintains its defensive shape</p>
-<p><img src="convexhull.gif.gif" class="img-fluid"></p>
-</section>
-<section id="voronoi" class="level1">
-<h1>Voronoi</h1>
-<p>Ever wondered how much space each player “owns” on the field?</p>
-<ul>
-<li>Each player has their own “territory” shown by different colors</li>
-<li>These territories constantly change as players move</li>
-<li>The boundaries show where one player’s influence ends and another’s begins</li>
-</ul>
-<p>What This Tells Us: - Which team controls more of the field - Where there might be space to pass or move into - How well positioned players are relative to each other</p>
-<p>It’s like each player has their own personal bubble, and these bubbles adjust in real-time based on everyone’s position.</p>
-<p><img src="voronoi.gif.gif" class="img-fluid"></p>
 
 
 </section>
@@ -201,6 +221,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -273,7 +437,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/t-zoucha\.github\.io\/Futbol-Data\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -602,6 +766,26 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Football Analytics Hub</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/t-zoucha/Futbol-Data">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
